@@ -6,7 +6,7 @@
 #include<fstream>
 using namespace std;
 ifstream fi("input.txt");
-struct NGAYTHANG{
+struct NGAYTHANG{ //ham khai bao ngay , thang , nam
 		int day;
 		int  month;
 		int year;
@@ -18,7 +18,7 @@ int CheckYear(NGAYTHANG x)
 		return 1;
 	return 0;
 }
-void Create(NGAYTHANG &x,string &st)
+void Create(NGAYTHANG &x,string &st) // Ham tao ngay thang
 {
 	char c[4];
 		fi>>st;
@@ -90,13 +90,13 @@ void Add(NGAYTHANG n,int t)
 				}
 		}
 }
-void Sub(NGAYTHANG n,int t)
+void Sub(NGAYTHANG n,int t) // Ham ngay thang
 {
 	int sum = CalculateDay(n);
 	if(sum>t)
 		{
 			sum-=t;
-			if(CheckYear(n))
+			if(CheckYear(n)) // Kiem tra co phai nam nhuan hay khong
 				{
 					Month[2]=29;
 					PrintRs(n.year,sum);
@@ -109,7 +109,7 @@ void Sub(NGAYTHANG n,int t)
 		}
 	else
 		{
-			if(CheckYear(n))
+			if(CheckYear(n)) //-- kiem tra nam 
 				{
 					sum=sum-t+366;
 					n.year--;
@@ -146,31 +146,4 @@ int main()
 	Add(x,2);
 	Sub(x,365);
 }
-/* ChonDe()
-chon de lam
-DocDe()
-doc dong 1
-Su dung for
-nhap cau tra loi ( A,B,C)
-int Kiemtra DapAn ( string a, string)
-return 2
-else return 0
-LuuDiem(int Diem)
---------------------------------
-struct bode
-{
-	int SL
-	string cau hoi
-	string ct1,ct2,ct3,ct4
-struct ng{
-	string ten
-	int dem;
-}
-void docde(){
-	cout' cin..
-	in(de ==1)
-	{
-	ifstream ("de1.txt")
-	string s; bode de1;
-	getline(s,f); atoi(s);
-	*/
+
