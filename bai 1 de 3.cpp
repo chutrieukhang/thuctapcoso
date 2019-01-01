@@ -4,7 +4,7 @@
 #include<vector>
 #include<stdlib.h>
 using namespace std;
-typedef struct 
+typedef struct // -- Ham khai bao thong tin tren dien thoai
 {
 	char ten[50];
 	char gioitinh[5];
@@ -59,7 +59,7 @@ void indanhba(danhba c)
 	cout<<"gioi tinh "<<c.gioitinh<<endl;
 	cout<<"............................."<<endl;
 }
-void indb()
+void indb() // -- Ham in danh ba
 {
 	int size=db.size();
 	for(int i=0;i<size;i++)
@@ -138,7 +138,7 @@ int main()
 	fflush(stdin);
 	danhba c;
 	strcpy(c.ten,"chu trieu khang");
-	strcpy(c.email,"dbbb");
+	strcpy(c.email,"jaychuu");
 	strcpy(c.diachi,"nha trang");
 	strcpy(c.gioitinh,"nam");
 	strcpy(c.sdt,"0927171924");
@@ -146,7 +146,7 @@ int main()
 	danhba c1;
 	strcpy(c1.ten, "chu trieu khang1	");
 	strcpy(	c1.diachi,"nha trang");
-	strcpy(	c1.email,"dbbb");
+	strcpy(	c1.email,"jaychuu");
 	strcpy(c1.gioitinh,"nam");
 	strcpy(c1.sdt,"1");
 	themmoi(c1);	
