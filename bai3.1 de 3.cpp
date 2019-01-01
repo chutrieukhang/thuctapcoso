@@ -9,16 +9,7 @@ using namespace std;
 fstream f;
 fstream g;
 
-// --- khong su dung struct de quan ly cau hoi tao ra bo de , chi su dung file.txt ---
-//struct DE{
-//	string CH;
-//	string DAA;
-//	string DAB;
-//	string DAC;
-//	string DA;
-//};
-
-// --- ham kiem tra dap an dung va dap an nguoi thi ---
+//  kiem tra dap an dung va dap an nguoi thi 
 bool KiemTraDA(string a, string b){
 	if(a.compare(b) == 0)
 		return true;
@@ -26,7 +17,7 @@ bool KiemTraDA(string a, string b){
 		return false;
 }
 
-// --- ham yeu cau luu diem ---
+// --- ham luu diem ---
 void LuuDiem(int diem){
 	int a;
 	do{
@@ -74,8 +65,8 @@ void MoDe(){
 		if(KiemTraDA(s, x) == true)
 			diem += 2;
 	}
-	cout << "da hoan thanh bai kiem tra!!!" << endl << endl;
-	cout << "diem so la:  " << diem << endl << endl;
+	cout << "da hoan thanh bai kiem tra!!!" << endl;
+	cout << "diem so la:  " << diem << endl;
 	LuuDiem(diem);
 	
 }
@@ -132,3 +123,31 @@ int main(){
 	
 	ChonDe();
 }
+/* ChonDe()
+chon de lam
+DocDe()
+doc dong 1
+Su dung for
+nhap cau tra loi ( A,B,C)
+int Kiemtra DapAn ( string a, string)
+return 2
+else return 0
+LuuDiem(int Diem)
+--------------------------------
+struct bode
+{
+	int SL
+	string cau hoi
+	string ct1,ct2,ct3,ct4
+struct ng{
+	string ten
+	int dem;
+}
+void docde(){
+	cout' cin..
+	in(de ==1)
+	{
+	ifstream ("de1.txt")
+	string s; bode de1;
+	getline(s,f); atoi(s);
+	*/
